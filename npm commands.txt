@@ -1,3 +1,16 @@
+Frontend (React + Next.js + Tailwind)
+Node.js: >=18.x
+React 18 and Next.js 13+ require Node 18 or higher for full features (App Router, Server Components, etc.).
+TailwindCSS works well with Node 18+.
+npm: >=9.x (comes with Node 18)
+
+Backend (FastAPI + Python + Snowflake)
+Python: 3.9 – 3.11
+FastAPI supports 3.7+, but Snowflake connector and modern libraries work best on Python 3.9+.
+Python 3.12 is new and may have minor compatibility issues with Snowflake connector.
+pip: Latest version (upgrade if needed)
+-------------------------------------------------------
+Reach Front end commands:
 npx create-next-app@latest <AppName>
 npm install react-icons
 npm install recharts react-icons
@@ -40,6 +53,10 @@ Create .env in the root folder:
 │── requirements.txt
 │── README.md
 
+----------------
+in main.py file:
+
+from fastapi.middleware.cors import CORSMiddleware
 Backend trust request from front end
 # Enable CORS
 app.add_middleware(
@@ -49,3 +66,4 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+-----------------
