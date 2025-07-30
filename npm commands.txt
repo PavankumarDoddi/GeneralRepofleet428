@@ -1,0 +1,41 @@
+npx create-next-app@latest <AppName>
+npm install react-icons
+npm install recharts react-icons
+npm run dev
+npm install react-leaflet leaflet
+npm install recharts
+Install the types package:
+npm install --save-dev @types/leaflet
+
+
+Backend:
+
+Create Venv
+python -m venv .venv
+
+Activate venv 
+.venv\Scripts\activate
+
+Install required packages:
+pip install fastapi uvicorn snowflake-connector-python pandas python-dotenv
+pip install snowflake-connector-python
+Environment Variables
+Create .env in the root folder:
+
+
+│── app/
+│   ├── __init__.py
+│   ├── main.py              # Entry point
+│   ├── config.py            # Configuration & credentials
+│   ├── database.py          # DB connection logic
+│   ├── routers/
+│   │   ├── __init__.py
+│   │   ├── historical.py    # API for historical data
+│   │   └── forecast.py      # API for forecast data
+│   └── services/
+│       ├── __init__.py
+│       ├── historical_service.py
+│       └── forecast_service.py
+│── .env                     # Environment variables
+│── requirements.txt
+│── README.md
