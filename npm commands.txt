@@ -67,3 +67,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 -----------------
+
+
+Route Schema:
+
+https://chatgpt.com/c/688a8241-8704-8006-a34b-ad7c0e5b6e42
+
+
